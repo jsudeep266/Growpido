@@ -5,8 +5,9 @@ A professional dashboard for monitoring reputation risks across LinkedIn, News, 
 ## 🚀 Features
 - **Multi-Platform Ingestion**: Pulls data from LinkedIn (Proxycurl), Google News, and Web Search (SerpApi).
 - **Groq-Powered Analysis**: Uses Llama 3 to classify mentions by Sentiment and Risk Level (Ignore, Watch, Respond Now).
-- **Executive Weekly Brief**: Generates a 3-minute read summary for busy stakeholders.
-- **Human-in-the-Loop**: Authorized AI responses via a secure "Human Gate" dashboard.
+- **Sentiment Summary**: Condensed 3-point brief (Positive, Negative, Neutral) for rapid situational awareness.
+- **Evidance Toggle**: Collapsed raw data view for deep-dive verification.
+- **Human-in-the-Loop**: Editable AI response drafting and authorization via the "Human Gate".
 
 ## 🛠️ Setup
 1. **Install Dependencies**:
@@ -27,8 +28,8 @@ A professional dashboard for monitoring reputation risks across LinkedIn, News, 
    ```
 
 ## 📊 Dashboard Usage
-**## Entity Name: "Growpido" or "Nidhi Hooda"** as we have data for those
-
+- **Entity Names**: Set search filters to `"Growpido"` or `"Nidhi Hooda"` as pre-seeded data is configured for these entities.
 - **Research**: Fetches new data and runs AI classification.
-- **Executive Brief**: Click the button in the sidebar for a text-based weekly summary.
-- **Human Gate**: Expand any "Critical" mention to generate and approve an AI response draft.
+- **Summary**: Displays the 3-point sentiment-grouped brief.
+- **Evidance**: Toggle open the collapsed "Evidance" table to review tracked public metrics.
+- **Human Gate**: Expand any critical mention, click "Generate" to construct a draft, edit the response manually if needed, and press "Approve".
